@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Game</title>
+    <script src="/script/game.js" defer> </script>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="startScreen">
+            <div class="startLogo"></div>
+            <button class="startButton">Start game</button>
+        </div>
+        <div class="gameGrid">
+            <div class="instruction">
+                <h1>How to PLAY</h1>
+                <p>1. The user will have 3 types of tools:<br>
+                    a. Axe - for cutting trees<br>
+                    b. Pickaxe - for mining rocks<br>
+                    c. Shovel - for digging dirt<br>
+                    2. Clicking on a tool followed by clicking on a tile in the<br>
+                    world will remove the tile. (If it is of the correct type<br>
+                    according to #1) and add it to the inventory.<br>
+                    3. User can click on the tile in the inventory and place it <br>
+                    back in the world (just the last one).
+                </p>
+            </div>
+        </div>
+        <div class="toolBox">
+            <div class="picaxe">
+                <img src="/assets/images/pickaxe.png" alt="picaxe">
+                <p>Picaxe</p>
+            </div>
+            <div class="shovel">
+                <img src="/assets/images/shovel.png" alt="shovel">
+                <p>Shovel</p>
+            </div>
+            <div class="axe">
+                <img src="/assets/images/axe.png" alt="axe">
+                <p>Axe</p>
+            </div>
+            <div class="inventory">
+                <div class="myInventory grass">
+                    <p>0</p>
+                </div>
+                <div class="myInventory rock">
+                    <p>0</p>
+                </div>
+                <div class="myInventory land">
+                    <p>0</p>
+                </div>
+                <div class="myInventory leaves">
+                    <p>0</p>
+                </div>
+                <div class="myInventory wood">
+                    <p>0</p>
+                </div>
+            </div>
+            <button class="resetButton">Reset</button>
+            <button class='instructionsButton'>Game Instructions</button>
+        </div>
+    </div>
+</body>
+
+</html>

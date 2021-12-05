@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.startScreen {
+  width: 100%;
+  height: 100%;
+  margin: 5% 0 0 15%;
+  background: url("/assets/images/minecraft.jpg") no-repeat;
+  display: block;
+}
+
+.startButton {
+  margin: 23% 0 0 40%;
+  width: 10em;
+  height: 4em;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.instruction {
+  background: rgba(0, 0, 0, 0.712);
+  color: #fff;
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  z-index: 999;
+  top: 25%;
+  left: 35%;
+  visibility: hidden;
+}
+
+.instruction h1, .instruction p {
+  margin-left: 4%;
+}
+
+.resetButton {
+  width: 5em;
+  height: 2em;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+.instructionsButton {
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+}
+.resetButton:hover,
+.instructionsButton:hover {
+  color: black;
+  background: #fff;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+}
+
+.gameGrid {
+  margin: 0 100px;
+  border: 1px solid black;
+  height: 100vh;
+  display: grid;
+  visibility: hidden;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  background: rgb(149, 215, 241);
+}
+
+.gameGrid div:hover {
+  border: .5px solid #fff;
+}
+
+.sky {
+  background: rgb(149, 215, 241);
+  border: 1px transparent;
+}
+
+.box:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.toolBox {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toolBox button {
+  color: #fff;
+  border: 1px solid grey;
+}
+
+
+.picaxe,
+.shovel,
+.axe {
+  border: 1px solid white;
+  padding: 5px;
+  width: 65px;
+  color: white;
+  text-align: center;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+
+
+.picaxe  img,
+.shovel  img,
+.axe  img {
+  width: 3.5rem;
+}
+
+.toolBox button {
+  width: 150px;
+  padding: 5px;
+  margin-top: 8px;
+}
+
+.inventory {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  margin-top: 12%;
+}
+
+.myInventory {
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto;
+  color: white;
+  cursor: pointer;
+}
+
+.cloud {
+  background: #fff;
+}
+.grass {
+  background: url("/assets/images/grass_inv.png") no-repeat center;
+}
+.rock {
+  background: url("/assets/images/stone.jpg") no-repeat center;
+}
+.land {
+  background: url("/assets/images/dirt_inv.jpg") no-repeat center;
+}
+.leaves {
+  background: url("/assets/images/leaf.jfif") no-repeat center;
+}
+.wood {
+  background: url("/assets/images/wood_inv.jpg") no-repeat center;
+}
+.blue {
+  background: rgba(84, 84, 156, 0.527);
+}
+.red {
+  background: red;
+}
