@@ -77,7 +77,7 @@ const gameMapDrawer = () => {
 }
 
 const resetGame = (columnEnd = 25) => {
-    for (let row = 1; row <= 13; row++) {
+    for (let row = 1; row <= 20; row++) {
         for (let column = 1; column <= columnEnd; column++) {
             collectedObj[`${row}.${column}`].classList[1] &&
                 collectedObj[`${row}.${column}`].classList.remove(`${collectedObj[`${row}.${column}`].classList[1]}`);
