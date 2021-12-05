@@ -97,7 +97,7 @@ const collectMaterial = (e) => {
         || collectedObj[`${row + 1}.${column - 1}`].classList.length == 1
         || collectedObj[`${row + 2}.${column}`].classList.length == 1) {
         if (materialsAndTools[tool].includes(material)) {
-            inventory[material] ? inventory[material] += 1 : inventory[material] = 1;
+            if (inventory[material]) { inventory[material] += 1 } else { inventory[material] = 1 }
             e.target.classList.remove(material);
             updateInventory()
         } else wrongChoice(e);
@@ -158,7 +158,7 @@ const toolsBackround = () => {
     shovel.classList.contains('blue') && shovel.classList.remove('blue');
 }
 
-let numberOfBoxes = 0;
+let numberOfDivs = 0;
 
 const gameCreator = (rowStart = 1, rowEnd = 20, columnStart = 1, columnEnd = 25) => {
     for (let row = rowStart; row <= rowEnd; row++) {
@@ -169,7 +169,7 @@ const gameCreator = (rowStart = 1, rowEnd = 20, columnStart = 1, columnEnd = 25)
             sky.style.gridRow = row;
             sky.style.gridColumn = column;
             collectedObj[`${row}.${column}`] = sky;
-            numberOfBoxes++;
+            numberOfDivs++;
         }
     }
 }
@@ -222,7 +222,6 @@ grassInventory.addEventListener('click', (event) => {
     grassInventory.style.opacity = 1;
     game.addEventListener('click', rebuildMaterials);
 })
-
 
 
 rockInventory.addEventListener('click', () => {
