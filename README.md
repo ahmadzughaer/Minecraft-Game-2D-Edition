@@ -11,7 +11,7 @@ rebuildMaterials used to put the inventory to the map
 
 what was challenging is to save all the inventory separately and differentiate the tools functionality after hours of thinking and search I come over the solution.
 
-to test the result visit this link: https://wizardly-liskov-178690.netlify.app/
+to test the result visit this link: https://sad-golick-662dee.netlify.app/
 ![minecraft](https://user-images.githubusercontent.com/74101284/144736808-8971b5a6-9263-41c3-9f68-e67a11efe8d5.PNG)
 
 
