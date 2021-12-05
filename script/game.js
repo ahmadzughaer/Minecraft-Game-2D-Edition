@@ -211,7 +211,6 @@ woodInventory.addEventListener('click', (event) => {
     removeOtherEventListeners()
     material = 'wood';
     toolsBackround();
-    woodInventory.style.opacity = 1;
     game.addEventListener('click', rebuildMaterials);
 })
 
@@ -219,7 +218,6 @@ grassInventory.addEventListener('click', (event) => {
     removeOtherEventListeners()
     material = 'grass';
     toolsBackround();
-    grassInventory.style.opacity = 1;
     game.addEventListener('click', rebuildMaterials);
 })
 
@@ -228,7 +226,6 @@ rockInventory.addEventListener('click', () => {
     removeOtherEventListeners()
     material = 'rock';
     toolsBackround();
-    rockInventory.style.opacity = 1;
     game.addEventListener('click', rebuildMaterials);
 })
 
@@ -236,7 +233,6 @@ landInventory.addEventListener('click', () => {
     removeOtherEventListeners()
     material = 'land';
     toolsBackround();
-    landInventory.style.opacity = 1;
     game.addEventListener('click', rebuildMaterials);
 })
 
@@ -244,7 +240,6 @@ leavesInventory.addEventListener('click', () => {
     removeOtherEventListeners()
     material = 'leaves';
     toolsBackround();
-    leavesInventory.style.opacity = 1;
     game.addEventListener('click', rebuildMaterials);
 })
 
